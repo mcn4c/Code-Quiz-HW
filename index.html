@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Celebrity Halloween Costume Quiz</title>
+</head>
+<body>
+    
+    <h1 class="time"></h1>
+    
+<form name="quiz" method="post" name="buttons" id="form" onsubmit="return totalVal()">
+
+    <div class="question" id="question1"><h3>1) Which celebrity is dressed as Larry David?</h3><br>
+    <img class="image" src="https://i.kym-cdn.com/editorials/icons/mobile/000/001/930/larry-1.jpg" alt="Larry David Costume">
+    </div>
+    <input id="answer" type="radio" name="group1" value="wrong">Johnny Knoxville <br>
+    <input id="answer" type="radio" name="group1" value="wrong"> Adam Levine<br>
+    <input id="answer" type="radio" name="group1" value="correct"> Tony Hawk<br>
+    <div id="quiz"></div>
+    <button id="submit">Submit Answer</button>
+    <div id="results"></div><hr>
+    
+    <div class="question" id="question2"><h3>2) Which celebrity is dressed as Red from the movie <em>Us</em>?</h3>
+        <img class="image" src="https://assets.vogue.com/photos/5db35a5802c449000830f77b/master/w_1600%2Cc_limit/74479988_182991192744852_5222362288224957085_n%252520(1).jpg" alt="Red Costume">
+        </div>
+    <input id="answer" type="radio" name="group2" value="wrong">Diana Ross<br>
+    <input id="answer" type="radio" name="group2" value="correct">Tracee Ellis Ross<br>
+    <input id="answer" type="radio" name="group2" value="wrong">Chudney Ross<br>
+    <div id="quiz"></div>
+    <button id="submit">Submit Answer</button>
+    <div id="results"></div><hr>
+    
+    <div class="question" id="question3"><h3>3) Which singer is dressed as Pennywise?</h3>
+        <img class="image" src="https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/ld3n1smirs9vd6m0_1572277217.jpeg?tr=w-812,h-464" alt="Pennywise Costume">
+        </div>
+    <input id="answer" type="radio" name="group3" value="correct">Demi Lovato<br>
+    <input id="answer" type="radio" name="group3" value="wrong">Jennifer Lopez<br>
+    <input id="answer" type="radio" name="group3" value="wrong">Mariah Carey<br>
+    <div id="quiz"></div>
+    <button id="submit">Submit Answer</button>
+    <div id="results"></div><hr>
+
+     <div class="question" id="question4"><h3>4) From which movie did Mindy Kaling get this costume idea?</h3>
+        <img class="image" src="https://www.mytalk1071.com/wp-content/uploads/2019/11/image_galleryuuide7c39036-cb03-428d-8447-b3f2db439741groupId10139t1572613999274" alt="Mindy Kaling Costume">
+        </div>
+    <input id="answer" type="radio" name="group4" value="wrong"> <em>Raising Arizona</em><br>
+    <input id="answer" type="radio" name="group4" value="wrong"> <em>The Big Lebowski</em><br>
+    <input id="answer" type="radio" name="group4" value="correct"> <em>Once Upon a Time in Hollywood</em><br>
+    <div id="quiz"></div>
+    <button id="submit">Submit Answer</button>
+    <div id="results"></div><hr>
+    
+    <div class="question" id="question5"><h3>5) Who is 100% that bitch?</h3>
+        <img class="image" src="https://metro.co.uk/wp-content/uploads/2019/11/PRC_94305589.jpg?quality=90&strip=all" alt="100% that bitch">
+        </div>
+    <input id="answer" type="radio" name="group5" value="wrong">Kim Kardashian<br>
+    <input id="answer" type="radio" name="group5" value="correct">Lizzo<br>
+    <input id="answer" type="radio" name="group5" value="wrong">Shonda Rimes<br>
+    <div id="quiz"></div>
+    <button id="submit">Submit Answer</button>
+    <div id="results"></div><hr>
+    
+    <div class="question" id="question6"><h3>6) Who is dressed as the Joker?</h3>
+        <img class="image" src="https://media.comicbook.com/2019/11/the-weeknd-joker-1193977-1280x0.jpeg" alt="Joker Costume">
+        </div>
+    <input id="answer" type="radio" name="group6" value="correct">The Weekend<br>
+    <input id="answer" type="radio" name="group6" value="wrong">Johnny Depp<br>
+    <input id="answer" type="radio" name="group6" value="wrong" >Josh Brolin<br>
+    <div id="quiz"></div>
+    <button id="submit">Submit Answer</button>
+    <div id="results"></div><hr>
+
+    <div class="question" id="question7"><h3>7) From which tv show did Ariana Grande borrow this costume idea?</h3>
+        <img class="image" src="https://media1.popsugar-assets.com/files/thumbor/ZY5hanPLXZnZqSfcd8qxZCjSIVY/0x257:1456x1713/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/10/31/695/n/1922153/6bcae4725dbb008b97e925.12699491_/i/ariana-grande-twilight-zone-halloween-makeup-2019.jpg" alt="Ariana Grande Costume">
+        </div>
+    <input id="answer" type="radio" name="group7" value="wrong"> Black Mirror<br>
+    <input id="answer" type="radio" name="group7" value="wrong"> Alfred Hitchcock Presents<br>
+    <input id="answer" type="radio" name="group7" value="correct">The Twilight Zone<br>
+    <div id="quiz"></div>
+    <button id="submit">Submit Answer</button>
+    <div id="results"></div><hr>
+
+    <div class="question" id="question8"><h3> 8) Which <em>Clueless</em> character is Lupita Nyongo dressed as?</h3>
+        <img class="image" src="https://www.abouther.com/sites/default/files/2018/11/02/lupita_nyongo_as_dionne_from_clueless.jpg" alt="Clueless Costume">
+        </div>
+    <input id="answer" type="radio" name="group8" value="wrong">Tai<br>
+    <input id="answer" type="radio" name="group8" value="wrong">Cher<br>
+    <input id="answer" type="radio" name="group8" value="correct">Dionne<br>
+    <div id="quiz"></div>
+    <button id="submit">Submit Answer</button>
+    <div id="results"></div><hr>
+    
+    <div class="question" id="question9"><h3>9) Who transformed into Post Malone for Halloween?</h3>
+        <img class="image" src="https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8xODc3NDUzNS9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTYxMDM2ODIzNn0.66THpiUCYqrIL3MWyeeqkKwguVrXusGRfo1uxu3AaKI/img.jpg?width=1200&coordinates=0%2C2112%2C0%2C1973&height=800" alt="Post Malone Costume">
+        </div>
+    <input id="answer" type="radio" name="group9" value="wrong">Vanessa Hudgens<br>
+    <input id="answer" type="radio" name="group9" value="correct"> Rita Ora<br>
+    <input id="answer" type="radio" name="group9" value="wrong" >Khloe Kardashian<br>
+    <div id="quiz"></div>
+    <button id="submit">Submit Answer</button>
+    <div id="results"></div><hr>
+
+    <div class="question" id="question10"><h3>10)  Who's this in a Guy Fieri costume?</h3>
+        <img class="image" src="https://cdn.vox-cdn.com/thumbor/jFbOrEydQhp774UxGYpIBJIfG-4=/0x0:2000x1500/1200x800/filters:focal(0x0:2000x1500)/cdn.vox-cdn.com/uploads/chorus_image/image/47526917/tiegen-fieri-top.0.0.jpg" alt="Guy Fieri Costume">
+        </div>
+    <input id="answer" type="radio" name="group10" value="wrong"> Rob Schneider<br>
+    <input id="answer" type="radio" name="group10" value="wrong"> Amanda Bynes<br>
+    <input id="answer" type="radio" name="group10" value="correct"> Chrissy Teigen<br>
+    <div id="quiz"></div>
+    <button id="submit">Submit Answer</button>
+    <div id="results"></div><hr>
+    
+    <div class="question" id="question11"><h3>11) Who went all out as Jessica Rabbit?</h3>
+        <img class="image" src="https://cdn.vox-cdn.com/thumbor/SnkRpUyM9qtsw10wDOSlkPGDxt4=/0x135:1996x1632/1400x1400/filters:focal(0x135:1996x1632):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/47561669/GettyImages-495193166.0.jpg" alt="Jessica Rabbit Costume">
+        </div>
+    <input id="answer" type="radio" name="group11" value="correct">Heidi Klum<br>
+    <input id="answer" type="radio" name="group11" value="wrong">Angelina Jolie<br>
+    <input id="answer" type="radio" name="group11" value="wrong">Sofia Vergara<br>
+    <div id="quiz"></div>
+    <button id="submit">Submit Answer</button>
+    <div id="results"></div><hr>
+    
+    <div class="question" id="question12"><h3>12) Which <em>Grease</em> character is Jenny McCarthy dressed as? </h3>
+        <img class="image" src="https://editorial01.shutterstock.com/wm-preview-1500/9207023l/fd60f9e8/jenny-mccarthy-hosts-halloween-party-at-siriusxm-new-york-usa-shutterstock-editorial-9207023l.jpg" alt="Jenny McCarthy Costume">
+        </div>
+    <input id="answer" type="radio" name="group12" value="wrong">Cha-Cha<br>
+    <input id="answer" type="radio" name="group12" value="correct"> Sandy<br>
+    <input id="answer" type="radio" name="group12" value="wrong" >Frenchy<br>
+    <div id="quiz"></div>
+    <button id="submit">Submit Answer</button>
+    <div id="results"></div><hr>
+
+    <div class="question" id="question13"><h3>13) Who's this bearded fisherman?</h3>
+        <img class="image" src="https://i.pinimg.com/originals/b1/68/a2/b168a28865500fa0da93cb02196bca42.jpg" alt="Bearded Fisherman Costume">
+        </div>
+    <input id="answer" type="radio" name="group13" value="wrong"> Roseanne Barr<br>
+    <input id="answer" type="radio" name="group13" value="wrong"> Danny Devito<br>
+    <input id="answer" type="radio" name="group13" value="correct">Melissa McCarthy<br>
+    <div id="quiz"></div>
+    <button id="submit">Submit Answer</button>
+    <div id="results"></div><hr>
+    
+    <div class="question" id="question14"><h3>14) Who is Naya Rivera dressed as?</h3>
+        <img class="image" src="https://i.pinimg.com/originals/8a/d5/f2/8ad5f2ddd213995c5925ec928c398fdb.jpg" alt="Naya Rivera Costume">
+        </div>
+    <input id="answer" type="radio" name="group14" value="wrong">Carmen Sandiego<br>
+    <input id="answer" type="radio" name="group14" value="wrong">Anya Amosova<br>
+    <input id="answer" type="radio" name="group14" value="correct">Lana Kane<br>
+    <div id="quiz"></div>
+    <button id="submit">Submit Answer</button>
+    <div id="results"></div><hr>
+    
+    <div class="question" id="question15"><h3>15) Who is this dressed as Uncle Fester from <em>The Adams Family</em>?</h3>
+        <img class="image" src="https://cdn-img.instyle.com/sites/default/files/migrated_assets/galleries/15/10/rexfeatures_1483044c.jpg" alt="Uncle Fester Costume">
+        </div>
+    <input id="answer" type="radio" name="group15" value="correct">Brooke Shields<br>
+    <input id="answer" type="radio" name="group15" value="wrong"> Michelle Pfeiffer<br>
+    <input id="answer" type="radio" name="group15" value="correct" >Courtney Cox<br>
+    <div id="quiz"></div>
+    <button id="submit">Submit Answer</button>
+    <div id="results"></div><hr>
+
+
+    
+    <button class="submit" onclick="showTotalvalue();" type="submit">Submit</button></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
