@@ -66,6 +66,13 @@ h1 {
     color: green;
 }
 
+.btn:focus {
+    background-color: white;
+    color: red;
+}
+
+
+
 .start-btn, .next-btn {
     font-weight: bold;
     padding: 10px 20px;

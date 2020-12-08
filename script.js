@@ -5,7 +5,7 @@ var questionIndex
 var questionElement = document.getElementById("question");
 var answerButtonsElement = document.getElementById("answer-buttons")
 var timeEl = document.querySelector(".time");
-var secondsLeft = 120;
+var secondsLeft = 60;
 
 // creating function setTime
 function setTime() {
@@ -16,7 +16,7 @@ function setTime() {
     timeEl.textContent = "You have " + secondsLeft + " seconds left";
 
     //when seconds left is zero functions clearInterval(timerInterval) and timeIsUp() will run
-    if(secondsLeft === 0) {
+    if(secondsLeft <= 0) {
       clearInterval(timerInterval);
       timeIsUp();
     }
@@ -42,44 +42,58 @@ function startGame() {
     setTime();
     startButton.classList.add("hidden");
     questionContainer.classList.remove("hidden");
-    //shuffledQuestions = questions.sort(() => Math.random() - .5);
     questionIndex = 0;
-    nextButton.classList.remove("hidden");
     nextQuestion()
+    nextButton.classList.remove("hidden");
 
 }
 
-function nextQuestion() {
-    displayQuestion(questions[questionIndex]);
-    reset()  
 
-
-}
 
 function displayQuestion(question) {
-    questionElement.innerText = question.question;
+    questionElement.innerHTML = question.question;
     question.answers.forEach(answer => {
         var button = document.createElement("button");
-        button.innerText = answer.text;
+        button.innerHTML = answer.text;
         button.classList.add("btn");
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
-        //else take time off the clock... add in later
+        else {
+            timeLost();
+        }
         button.addEventListener("click", selectAnswer)
         answerButtonsElement.appendChild(button);
     } )
 
 }
 
-/*function reset(){
+function timeLost() {
+
+    timerInterval = secondsLeft -= 10;
+    
+   }
+
+
+
+function nextQuestion() {
+    reset() 
+    displayQuestion(questions[questionIndex]);
+    
+
+
+}
+
+function reset(){
+
+    clearClass(document.body);
     nextButton.classList.add("hidden");
     while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild(answerButtonsElement.firstChild)  // this functionnot working
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild)  // this function not working
         
     }
 
-}   */  
+}    
 
 
 function selectAnswer(choice) {
@@ -87,19 +101,19 @@ function selectAnswer(choice) {
     var correct = selectedButton.dataset.correct;
     setCorrect(document.body, correct);
     Array.from(answerButtonsElement.children).forEach(button => {
-        setCorrect(button, button.dataset.correct)
+        setCorrect(button, button.dataset.correct);
     })
-    if (questions.length > questionIndex +1){
+    if (questions.length >= questionIndex ){
         nextButton.classList.remove("hidden");
     }
     else {
-        nextButton.innerText = "Finish";
+        nextButton.innerHTML = "Finish";
     }
 
 
 }
 function setCorrect(element, correct) {
-    clearCorrect(element);
+    clearClass(element);
     if (correct) {
         element.classList.add("correct");
     }
@@ -107,11 +121,16 @@ function setCorrect(element, correct) {
         element.classList.add("wrong");
     }
 
+    nextButton.classList.remove("hidden");
+
 }
-function clearCorrect(element) {
+function clearClass(element) {
     element.classList.remove("correct");
     element.classList.remove("wrong");
+    nextButton.classList.remove("hidden")
 }
+
+
 
 /* function finishQuiz() { // add in later 
 
@@ -139,7 +158,7 @@ var questions = [
     },
 
     {
-        question: "3)  On whose Indiana childhood experiences is 'A Christmas Story' is based? ",
+        question: "3)  On whose Indiana childhood experiences is 'A Christmas Story'  based? ",
         answers: [
            {text: "Dan Quayle", correct: false},
            {text: "Gene Hackman", correct: false},
