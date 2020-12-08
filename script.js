@@ -119,52 +119,52 @@ function clearCorrect(element) {
 
 var questions = [
     {
-        question: "1)  ",
+        question: "1) What is Kevin McCallister's father's name in 'Home Alone'?",
         answers: [
-           {text: "44", correct: false},
-           {text: "4", correct: true},
-           {text: "22", correct: false},
-           {text: "0", correct: false}
+           {text: "Jacob", correct: false},
+           {text: "Peter", correct: true},
+           {text: "Paul", correct: false},
+           {text: "Jonathan", correct: false}
         ]
     },
 
     {
-        question: "What is 2+2?",
+        question: "2) Which department store is featured in Miracle on 34th Street?",
         answers: [
-           {text: "44", correct: false},
-           {text: "4", correct: true},
-           {text: "22", correct: false},
-           {text: "0", correct: false}
+           {text: "Macy's", correct: true},
+           {text: "Bloomingdale's", correct: false},
+           {text: "Saks", correct: false},
+           {text: "Neiman Marcus", correct: false}
         ]
     },
 
     {
-        question: "What is 2+2?",
+        question: "3)  On whose Indiana childhood experiences is 'A Christmas Story' is based? ",
         answers: [
-           {text: "44", correct: false},
-           {text: "4", correct: true},
-           {text: "22", correct: false},
-           {text: "0", correct: false}
+           {text: "Dan Quayle", correct: false},
+           {text: "Gene Hackman", correct: false},
+           {text: "Ron Howard", correct: false},
+           {text: "Jean Shepherd", correct: true}
         ]
     },
 
     {
-        question: "What is 2+2?",
+        question: "4) In the movie 'Elf' which toy scares and angers Buddy?",
         answers: [
-           {text: "44", correct: false},
-           {text: "4", correct: true},
-           {text: "22", correct: false},
-           {text: "0", correct: false}
+           {text: "Rocking horse", correct: false},
+           {text: "Jack-in-a-Box", correct: true},
+           {text: "Toy robot", correct: false},
+           {text: "Yo-Yo", correct: false}
         ]
     },
     
     {
-        question: "What is 2+2?",
+        question: "5)  In 'Christmas Vacation', when Aunt Bethany is asked to say Grace, what does she do instead? ",
         answers: [
-           {text: "44", correct: false},
-           {text: "4", correct: true},
-           {text: "22", correct: false},
-           {text: "0", correct: false}
+           {text: "Sing the national anthem", correct: false},
+           {text: "Break wind", correct: false},
+           {text: "Recite the Pledge of Allegiance", correct: true},
+           {text: "Sing Amazing Grace", correct: false}
         ]
     }
 
