@@ -1,0 +1,83 @@
+*, * ::before, *::after {
+    box-sizing: border-box;
+    /*font-family */
+
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 100vh;
+    width: 100vw; 
+    background-color: green;
+    color: white;
+}
+
+h1 { 
+    
+}
+.time-score {
+    width: 300px;
+    max-width: 50%;
+    background-color: red;
+    border-radius: 10%;
+    padding: 5%;
+    box-shadow: 0 0 10px 2px;
+    float: right;
+
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: red;
+    border-radius: 10%;
+    padding: 5%;
+    box-shadow: 0 0 10px 2px;
+    
+    
+    
+    
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 10px 0;
+    gap: 20px;
+}
+
+.btn {
+    background-color: green;
+    border: solid white 2px;
+    padding: 5%;
+    border-radius: 10px;
+    color: white;
+    
+    
+
+}
+.btn:hover {
+    background-color: white;
+    color: green;
+}
+
+.start-btn, .next-btn {
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 30px;
+
+}
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
