@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Quiz</title>
+    <link rel=stylesheet href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Name of game, timer display and display for score but score not functioning-->  
+<h1 style ="color: white;"><b>Christmas Movie Trivia</b></h1>
+<div class="time-score" style="color: white;">
+    <h1 class="time"></h1><br>
+    <h1 class="score"></h1><br> 
+</div>
+
+<!--Container for question and answer choices -->
+<div class ="container" id="question-container">
+    <div id="question-div"></div>
+    <div class="hidden" id="answer-choices">
+        <label class ="btn-answer ">
+            <input type="radio" name="toggle"  value = "a-choice" onclick = "userAnswerA()">
+            <span id="a-choice"></span></label>
+        <label class ="btn-answer" >
+            <input type="radio" name="toggle" value = "b-choice" onclick = "userAnswerB()">
+            <span  id="b-choice"></span></label>
+        <label class ="btn-answer " >
+            <input type="radio" name="toggle" value = "c-choice" onclick = "userAnswerC()">
+            <span  id="c-choice"></span></label>
+        <label class ="btn-answer">
+            <input type="radio" name="toggle"  value = "d-choice" onclick = "userAnswerD()">
+            <span  id="d-choice"></span></label>
+            <label class ="btn-answer hidden">
+                <input type="radio" name="toggle"  value = "d-choice" onclick = "userAnswerD()">
+                <span  id="correct-choice"></span></label>
+       
+    </div>
+    
+    </div>
+<!-- Div for start, next, and submit buttons -->
+    <div class="control">
+        <button id="start-btn" class="start-btn btn" >Start</button>
+        <button id="next-btn" class="next-btn btn hidden">Next</button>
+        <button id="finish-btn" class="finish-btn btn hidden">Submit</button>
+        <button id="restart-btn" class="restart-btn btn hidden">Restart</button>
+    </div>
+    <div class="results" style="text-align: center; color: white; font-weight: bold; font-size: 30px;">
+        
+
+    </div>
+
+
+
+  <script src="./script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+body {
+    font-family: 'Courgette', cursive;
+    background-image: url("https://designshack.net/wp-content/uploads/photo-1511268011861-691ed210aae8-1024x682.jpeg");
+    background-repeat: no-repeat;
+    background-color: darkred;
+    
+}
+#question-div {
+    color: white;
+    font-size: 20px;
+    
+}
+
+#answer-choices {
+    margin:4px;
+   
+    float:left;
+}
+
+#answer-choices label {
+    float:left;
+    width:200px;
+    height: 100px;
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:2px solid white;
+    overflow:auto;
+    border-radius: 10px;
+       
+}
+
+#answer-choices label span {
+    text-align:center;
+    font-size: 32px;
+    padding:13px 0px;
+    display:block;
+}
+
+#answer-choices label input {
+    position:absolute;
+    top:-20px;
+}
+
+#answer-choices input:checked + span {
+    background-color:#404040;
+    color:#F7F7F7;
+}
+
+input:hover + span {
+    background-color: white;
+    color: red;
+}
+#answer-choices .btn-answer {
+    background-color: green;
+    color: white;
+}
+
+
+
+.btn {
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+    
+    background-color: green;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid green;
+
+ }
+ .btn:hover {
+     background-color: white;
+     color: red;
+ }
+ 
+
+ .hidden { 
+     display: none;
+ }
+
+
