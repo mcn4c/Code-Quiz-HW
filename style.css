@@ -1,8 +1,15 @@
-body {
+body, html {
     font-family: 'Courgette', cursive;
     background-image: url("https://designshack.net/wp-content/uploads/photo-1511268011861-691ed210aae8-1024x682.jpeg");
     background-repeat: no-repeat;
-    background-color: darkred;
+    /* background-color: darkred; */
+      /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
     
 }
 #question-div {
