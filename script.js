@@ -2,6 +2,8 @@
 var startButton = document.getElementById('start-btn');
 var nextButton = document.getElementById('next-btn');
 var finishButton = document.getElementById('finish-btn');
+var modal = document.getElementById('myModal');
+var scoreBtn = document.getElementById('scoreBtn');
 var questionContainer = document.getElementById('question-container');
 var currentQuestion = document.getElementById('question-div');
 var answerButtonsElement = document.querySelector('#answer-choices');
@@ -17,7 +19,10 @@ var secondsLeft = 60;
 var score = 0;
 var i = 1;
 
-//Question content in array (chose christmas movie quiz so friends and family could try it out)
+var firstName = document.getElementById('fname').value;
+var lastName = document.getElementById('lname').value;
+
+//Question content in array
 var questions = [
 	{
 		question: "1) What is Kevin McCallister's father's name in 'Home Alone'?",
@@ -174,13 +179,27 @@ function nextQuestion() {
 finishButton.addEventListener('click', function() {
 	currentQuestion.classList.add('hidden');
 	timeEl.classList.add('hidden');
-	userInitials();
+	displayModal();
 });
 
-// prompt to get users initials and display user's final score
-function userInitials() {
-	var promptInitials = prompt('Type your initials here: ');
+function displayModal() {
+	modal.style.display = 'block';
+	var span = document.getElementsByClassName('close'[0]);
+	span.onclick = function() {
+		modal.style.display = 'none';
+	};
 
-	resultsEl.innerHTML = promptInitials + ', your final score is ' + score + '.';
-	finishButton.classList.add('hidden');
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = 'none';
+		}
+	};
 }
+
+scoreBtn.addEventListener('click', function() {
+	var firstName = document.getElementById('fname').value;
+	var lastName = document.getElementById('lname').value;
+
+	resultsEl.innerHTML = `${firstName} ${lastName}, your score is ${score}`;
+	finishButton.classList.add('hidden');
+});
